@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Form Validate</title>
+</head>
+<body>
+  <form id="form">
+    <div class="content-input">
+      <input type="date" id="nacimiento">
+      <p class="error-message"></p>
+    </div>
+    <div>
+      <label for="">Edad:</label>
+      <p id="dataEdad"></p>
+      <input type="range" name="" id="edad" value="0">
+    </div>
+    
+    <div class="content-input">
+      <input type="text" value="" id="nombres">
+      <p class="error-message"></p>
+      <i class="bi bi-check-circle-fill icon-check"></i>
+      <i class="bi bi-x-circle-fill icon-x"></i>
+    </div>
+    
+    <div class="content-input">
+      <input type="password" value="" id="password">
+      <p class="error-message"></p>
+      <i class="bi bi-check-circle-fill icon-check"></i>
+      <i class="bi bi-x-circle-fill icon-x"></i>
+    </div>
+    
+
+    <div class="content-input">
+      <input type="email" value="" id="correo">
+      <p class="error-message"></p>
+      <i class="bi bi-check-circle-fill icon-check"></i>
+      <i class="bi bi-x-circle-fill icon-x"></i>
+    </div>
+    
+
+    <div class="content-input">
+      <select id="tipoDocumento">
+        <option value="select">SELECT</option>
+        <option value="1">CC</option>
+        <option value="2">TI</option>
+      </select>
+      <p class="error-message"></p>
+      <i class="bi bi-check-circle-fill icon-check"></i>
+    </div>
+    
+
+    <div class="content-input">
+      <select id="genero">
+        <option value="" disabled readonly selected>SEX</option>
+        <option value="1">Female</option>
+        <option value="2">Male</option>
+      </select>
+      <p class="error-message"></p>
+      <i class="bi bi-check-circle-fill icon-check"></i>
+    </div>
+    
+
+    <div class="content-input">
+      <label for="" id="title-habilidades"></label>
+      <p class="error-message"></p>
+      <i class="bi bi-check-circle-fill icon-check"></i>
+      <input type="checkbox" value="" > 
+    </div>
+    
+    <div class="content-input">
+      <label for="" id="title-hobbies"></label>
+      <p class="error-message"></p>
+      <i class="bi bi-check-circle-fill icon-check"></i>
+      <input type="radio" name="hobbies"> 
+      <input type="radio" name="hobbies"> 
+      <input type="radio" name="hobbies"> 
+      <input type="radio" name="hobbies"> 
+      <input type="radio" name="hobbies"> 
+      <input type="radio" name="hobbies">
+    </div>
+    
+    
+    <input type="color" id="color">
+    <button type="button" id="edit">Editar</button>
+    <button type="submit" id="enviar" value="">Send data</button>
+  </form>
+  <script src="app.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+form {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.content-input {
+    position: relative;
+}
+
+input {
+    width: 30%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    height: auto;
+}
+
+.error-message {
+    display: none;
+    width: 100%;
+}
+
+.error-message.invalid {
+    display: block;
+    color: #ff0000;
+}
+
+.error-message.valid {
+    display: block;
+    color: #008000;
+}
+
+.icon-check {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 285px;
+    color: #09b909;
+}
+
+.icon-check.valid {
+    display: block;
+}
+
+.icon-x {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 285px;
+    color: #ff0000;
+}
+
+.icon-x.invalid {
+    display: block;
+}
